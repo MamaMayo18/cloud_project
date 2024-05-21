@@ -70,7 +70,7 @@
             <input type="text" name="userName" placeholder="Enter your name" required>
             <input type="text" name="userId" placeholder="Enter your ID" required>
             <label>
-                <input type="radio" name="vote" value="Optionn" required> Option 1
+                <input type="radio" name="vote" value="Option" required> Option 3
             </label>
             <label>
                 <input type="radio" name="vote" value="Option2" required> Option 2
@@ -86,7 +86,7 @@
             const userId = document.querySelector('input[name="userId"]').value;
             const vote = document.querySelector('input[name="vote"]:checked').value;
             try {
-                const response = await fetch('https://cloud118.azurewebsites.net/api/HttpTrigger2?', {
+                const response = await fetch('https://cloud118.azurewebsites.net/api/HttpTrigger1?', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
