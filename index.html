@@ -91,7 +91,7 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ userName, userId, vote })
+                    body: JSON.stringify( userName, userId, vote )
                 });
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
